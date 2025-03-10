@@ -1,0 +1,71 @@
+/* CSS files add styling rules to your content */
+th {
+  font-family:'Rock Salt', cursive;
+  color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  letter-spacing: 2px;
+  font-size: smaller;
+  padding: 20px;
+}
+table{ 
+  background-image: url(./images/leopardskin.jpg);
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+tfoot td{
+  color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  text-align: center;
+  padding: 20px;
+  border: var(--border-width) solid var(--border-colour);
+  height: var(--hnf-height);
+}
+.album{
+  text-align: right;
+}
+.num{
+  text-align: left;
+}
+tbody{
+  tr:nth-child(even) {
+    background-image: url(./images/noise.png);
+    background-color: #e495e4;
+  }
+  tr:nth-child(odd) {
+    background-image: url(./images/noise.png);
+    background-color: #ff33cc ;
+  }
+}
+caption{
+  caption-side: bottom;
+  text-align: right;
+  font-family: 'Rock Salt', 'Helvetica Neu', cursive;
+  letter-spacing: 1px;
+  font-size: smaller;
+  padding: 15px;
+  font-weight: bold;
+}
+td{
+  text-align: center;
+  padding: 10px;
+}
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+table, th, td, thead{
+  border: 5px #800080;
+}
+thead th{
+  border: var(--border-width) solid var(--border-colour);
+  height: var(--hnf-height);
+}
+:root {
+  --border-width: 2px;
+  --border-colour: #800080;
+  --hnf-height: 30px;
+}
+
+
