@@ -1,0 +1,80 @@
+.card{
+    width: 18rem;
+    height: 18rem;
+}
+.card-product{
+    margin: auto;
+}
+.img-fluid{
+    height: 15rem;
+    width: 18rem;
+}
+.accordion{
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-button{
+    border: 1px solid rgb(7, 7, 7);
+}
+.modal-img{
+    width: 100%;
+    height: 100%;
+}
+.card-body img{
+    cursor: pointer;
+}
+/*Carousel*/
+.carousel-indicators button.thumbnail {
+    width: 70px;
+    height: 50px;
+  }
+  .carousel-indicators button.thumbnail:not(.active) {
+    opacity: 0.7;
+  }
+  .carousel-indicators {
+    position: static;
+  }
+.apartment1-carousel-inner{
+    width:100%; height: 700px !important;
+}
+.card-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* Space between cards */
+    padding: 10px;
+}
+
+/* Card Styling */
+.card-product {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 1 1 calc(25% - 16px); /* 4 cards per row by default */
+    max-width: 300px;
+}
+
+.card-product:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card-product {
+        flex: 1 1 calc(33.33% - 16px); /* 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-product {
+        flex: 1 1 calc(50% - 16px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-product {
+        flex: 1 1 100%; /* 1 card per row */
+    }
+}
