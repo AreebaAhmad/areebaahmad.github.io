@@ -1,0 +1,29 @@
+nav li a:hover{
+    background-color:rgb(200, 240, 221);
+}
+.accordion-flush{
+    background-color: rgb(5, 109, 74);
+}
+.paragraph{
+    text-align: justify;
+    padding: 5px;
+}
+.item{
+    text-align: center;
+}
+.card{
+    width: 18rem;
+    height: 18rem;
+}
+.img-fluid{
+    height: 14rem;
+    width: 15rem;
+}
+.card-product{
+    margin: auto;
+}
+.contactForm{
+    background-image: url(./images/showcase2.jpg);
+}
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Rock+Salt&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="./style1.css" rel="stylesheet">
+        <title>Create Account</title>
+    </head>
+    <body>
+        <section class="container py-5 fs-5">
+            <h1 class="fw-bold mb-4 allura-regular text-center">Create Account</h1>
+            <form>
+                <!-- Row 1: First Name & Last Name -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+                <!-- Row 2: Email & Phone -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Phone</label>
+                        <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+                <!-- Row 3: Username & Date of Birth -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" placeholder="Choose a username" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Date of Birth</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+                </div>
+                <!-- Row 4: Password & Confirm Password -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Create a password" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+                <!-- Row 5: Gender -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Gender</label>
+                        <select class="form-select" required>
+                            <option value="" disabled selected>Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Row 6: Terms -->
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" required>
+                            <label class="form-check-label">I agree to the Terms and Conditions</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 7: Button -->
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-dark px-4">Create Account</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
