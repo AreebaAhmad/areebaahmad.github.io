@@ -1,0 +1,66 @@
+.navbar, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Allura', cursive;
+}
+
+.nav-link, .nav-link:hover, h1, .footer-h5, .footer-p {
+  color: #2375c6 !important;
+}
+.navbar-brand, h2, h3 {
+  color: #032858 !important;
+}
+
+p{
+  color: #9a9494 !important;
+}
+
+.light-mode {
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.light-mode .overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+.dark-mode {
+  background-color: #1a1a2e;
+  background-image: none;
+}
+
+.dark-mode .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dark-mode .navbar, .dark-mode .nav-link, .dark-mode .navbar-brand  {
+  color: #ffffff !important;
+}
+
+.dark-mode h1 {
+  color: #eef07e !important;
+}
+
+.dark-mode h2, .dark-mode h3 {
+  color: #ff6f91 !important;
+}
+
+.dark-mode p, .dark-mode footer {
+  color: #ffffff !important;
+}
+
+.dark-mode .skills {
+  color: #000000 !important;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  transition: transform 0.7s ease;
+}
+.text-justify {
+  text-align: justify;
+}
+
+
