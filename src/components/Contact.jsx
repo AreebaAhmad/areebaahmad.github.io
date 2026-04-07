@@ -1,23 +1,37 @@
 import { useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
 
 function Contact() {
     const form = useRef()
     const [status, setStatus] = useState(null) // 'success' or 'error'
 
-    const sendEmail = (e) => {
+    const sendEmail = async(e) => {
         e.preventDefault()
-        emailjs.sendForm(
-            'service_xt2r67u',      // Service ID from EmailJS dashboard
-            'template_psvr6ra',     // Email template ID from EmailJS dashboard
-            form.current,
-            'J2acYRX5H_mH-J4nQ'       // Public Key from EmailJS dashboard
-        ).then(() => {
-            setStatus('success')
-            form.current.reset()
-        }).catch(() => {
+        setStatus(null)
+
+        const formData = new FormData(form.current)
+        const body = {
+            name: formData.get('user_name'),
+            email: formData.get('user_email'),
+            message: formData.get('message')
+        }
+
+        try {
+            const response = await fetch('http://localhost:8080/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body)
+            })
+
+            if (response.ok) {
+                setStatus('success')
+                form.current.reset()
+            } else {
+                setStatus('error')
+            }
+        } catch {
             setStatus('error')
-        })
+        }
+
     }
 
     return (
