@@ -13,8 +13,8 @@ function App() {
   const [darkMode, setDarkMode] = useState(false)
   return (
     <>
+    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
       <div className='overlay'>
-        <div className={darkMode ? 'dark-mode' : 'light-mode'}>
           <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
           <Hero />
           <About />
