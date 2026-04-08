@@ -1,6 +1,6 @@
 function Navbar({ darkMode, setDarkMode }) {
     return (
-        <nav className="container navbar navbar-expand-lg  bg-dark bg-opacity-50 rounded-4 shadow-lg">
+        <nav className="container navbar navbar-expand-lg  bg-dark bg-opacity-75 rounded-4 shadow-lg">
             <div className="container">
                 <a className="navbar-brand fs-4 fw-bold" href="#">Areeba Ahmad</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

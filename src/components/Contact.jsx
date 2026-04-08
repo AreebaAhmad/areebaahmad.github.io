@@ -35,7 +35,7 @@ function Contact() {
     }
 
     return (
-        <div id="contact" className="container mt-5 bg-dark bg-opacity-50 rounded-4 p-5 shadow-lg">
+        <div id="contact" className="container mt-5 bg-dark bg-opacity-75 rounded-4 p-5 shadow-lg">
             <h1 className="fw-bold mb-4">Contact Me</h1>
             {status === 'success' && (
                 <div className="alert alert-success alert-dismissible fade show" role="alert">

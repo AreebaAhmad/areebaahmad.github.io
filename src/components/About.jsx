@@ -1,6 +1,6 @@
 function About () {
     return (
-        <div id="about" className="container bg-dark bg-opacity-50 rounded-4 p-5 shadow-lg mt-5">
+        <div id="about" className="container bg-dark bg-opacity-75 rounded-4 p-5 shadow-lg mt-5">
             <h1 className="fw-bold mb-4">About Me</h1>
             <p className="text-white text-justify fs-6">
                 I am a dedicated Software Developer who enjoys turning ideas into practical 

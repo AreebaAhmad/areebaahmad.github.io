@@ -27,7 +27,7 @@ function Projects() {
     ]
 
     return (
-            <div  id="projects" className=" container bg-dark bg-opacity-50 rounded-4 p-5 shadow-lg mt-5">
+            <div  id="projects" className=" container bg-dark bg-opacity-75 rounded-4 p-5 shadow-lg mt-5">
                 <h1 className="fw-bold mb-4">Projects</h1>
                 <div className="row row-cols-1 row-cols-md-2 g-4">
                     {projects.map((project) => (

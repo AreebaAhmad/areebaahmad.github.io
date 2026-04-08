@@ -17,7 +17,7 @@ function Skills () {
         { name: 'TDD', icon: 'devicon-junit-plain colored' }
     ]
     return (
-        <div id="skills" className="container bg-dark bg-opacity-50 rounded-4 p-5 shadow-lg mt-5">
+        <div id="skills" className="container bg-dark bg-opacity-75 rounded-4 p-5 shadow-lg mt-5">
             <h1 className="fw-bold mb-4">Skills</h1>
             <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3">
                 {skills.map((skill) => (
